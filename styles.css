@@ -60,6 +60,13 @@ button:hover {
 }
 
 input.warning {
+  /* As there's no space between input and .warning This means that I wanna select all input
+  elements that have the .warning class applied to them */
+  /* .warning is a CSS class we created using the DOM in the JS file */
+  /* that .warning class was created for the #remaining-chars id in the JS file
+  but that same .warning class can be applied to the input element to. */
+  /* If there's a space between these words it means that we need to select .warning classes that are
+  children of input elements */
   background-color: rgb(248, 191, 145);
 }
 
