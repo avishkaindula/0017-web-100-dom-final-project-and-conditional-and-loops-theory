@@ -14,13 +14,25 @@ function updateRemainingCharacters(event) {
 
   remainingCharsElement.textContent = remainingCharacters;
 
-  if (remainingCharacters <= 10) {
+  if (remainingCharacters === 0) {
+    remainingCharsElement.classList.add("zero");
+    productNameInputElement.classList.add("zero");
+  } else if (remainingCharacters <= 10) {
     remainingCharsElement.classList.add("warning");
     productNameInputElement.classList.add("warning");
+    remainingCharsElement.classList.remove("zero");
+    productNameInputElement.classList.remove("zero");
+  } else {
+    remainingCharsElement.classList.remove("zero", "warning");
+    productNameInputElement.classList.remove("zero", "warning");
+    // remainingCharsElement.classList.remove("warning");
+    // productNameInputElement.classList.remove("warning");
+    // We can write both of this code inside the 26th and 27th line by using a ","
   }
   // this if statement won't get executed if we write it "outside" the function while
   // making the remainingCharsElement a global variable.
   // I can't find the reason for this.
+  // This overall conditional block is evaluated by JS starting from the "top" and go to "bottom"
 }
 
 productNameInputElement.addEventListener("input", updateRemainingCharacters);

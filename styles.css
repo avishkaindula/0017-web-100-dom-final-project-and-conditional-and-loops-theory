@@ -71,3 +71,11 @@ input.warning {
 #remaining-chars.warning {
   color: rgb(211, 109, 26);
 }
+
+input.zero {
+  background-color: rgb(248, 157, 145);
+}
+
+#remaining-chars.zero {
+  color: rgb(211, 54, 26);
+}
