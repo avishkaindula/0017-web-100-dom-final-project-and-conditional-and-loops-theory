@@ -1,4 +1,9 @@
-const myName = "Indula";
+// Control Structures
+// Control Structures are Special JS Syntax / Features that allow you to control
+// -----under which conditions code is executed - if statements
+// -----how often some code is executed - loops
+
+// const myName = "Indula";
 
 // if (true) {
 //   console.log("Hello!!");
@@ -64,6 +69,12 @@ console.log(2 === 2 || (2 === 3 && 5 === 6));
 // JS will automatically bracket the && and compare it before comparing the || values
 // the brackets was added by prettier extension. I didn't add them.
 
-console.log((2 === 2 || 2 === 2) && 5 === 6)
+console.log((2 === 2 || 2 === 2) && 5 === 6);
 // result = false
 // brackets gets executed first.
+
+const myName = "Max";
+
+if (myName === "Max") {
+  console.log("Hello!");
+}

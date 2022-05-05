@@ -10,14 +10,24 @@ function updateRemainingCharacters(event) {
 
   const remainingCharacters = 60 - enteredTextLength;
   // const remainingCharacters = maxAllowedChars - enteredTextLength;
-  // This is an alternative way to write the code in the 10th line.
+  // This is an alternative way to write the code in the 11th line.
 
   remainingCharsElement.textContent = remainingCharacters;
+
+  if (remainingCharacters <= 10) {
+    remainingCharsElement.classList.add("warning");
+    productNameInputElement.classList.add("warning");
+  }
+  // this if statement won't get executed if we write it "outside" the function while
+  // making the remainingCharsElement a global variable.
+  // I can't find the reason for this.
 }
 
 productNameInputElement.addEventListener("input", updateRemainingCharacters);
 
-const spanElement = document.getElementById("remaining-chars");
+// --------------------------------------------------------------------------------------------------------------------------
+
+// const spanElement = document.getElementById("remaining-chars");
 
 // spanElement.style.color = "red";
 // spanElement.style.fontSize = "30px";
@@ -34,8 +44,8 @@ const spanElement = document.getElementById("remaining-chars");
 // and create a class called .warning
 // so this code will overwrite some-class class and create a class called warning instead.
 
-spanElement.classList.add("warning");
+// spanElement.classList.add("warning");
 // this code will add a class called warning to the span element while still keeping the some-class class to.
 
-spanElement.classList.remove("warning");
+// spanElement.classList.remove("warning");
 // this code will remove the .warning class form the span element.
