@@ -78,3 +78,28 @@ const myName = "Max";
 if (myName === "Max") {
   console.log("Hello!");
 }
+
+let isLoggedIn = true;
+// these are flag variable
+// these variables contain only "true" or "false" as values
+// naming conventions that start with "is" are something that we use very often
+
+// if (isLoggedIn === true) {
+// console.log("User is logged in!");
+// }
+
+// We can also write just isLoggedIn like this and because it's set as true in the 82nd line
+// the code will get executed.
+
+if (isLoggedIn) {
+  console.log("User is logged in!");
+}
+
+if (!isLoggedIn) {
+  // the ! sign represents the opposite value of isLoggedIn
+  console.log("User is NOT logged in!");
+}
+
+if (isLoggedIn === false) {
+  console.log("User is NOT logged in!");
+}
