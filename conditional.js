@@ -103,3 +103,24 @@ if (!isLoggedIn) {
 if (isLoggedIn === false) {
   console.log("User is NOT logged in!");
 }
+
+const enteredUserName = "Indula";
+// const enteredUserName = "";
+
+if (enteredUserName.length > 0) {
+  console.log("Input is valid!");
+}
+// This code get executed if there's any character in the string
+
+if (enteredUserName) {
+  console.log("Input is valid!");
+}
+// This is an alternative way to write code in the 110th line
+// This is possible because JS has the concept called "truthy" and "falsy" values 
+// In a place where JS wants a Boolean (like the places where there's an if statement), if you provide a non boolean value,
+// Then JS tries to convert it into a Boolean and it has certain rules for that conversion.
+// an "empty string" or number 0 will be treated as false. (a string of "0" won't be treated as false)
+// These are known as falsy values
+// A string with anything in there will be treated as true. (These are known as truthy values)
+// Even a blank space or the string of "false" will be treated as true.
+// Therefor the String in the 107th line is treated as true.
