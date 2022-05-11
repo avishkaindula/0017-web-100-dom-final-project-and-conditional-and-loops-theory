@@ -68,3 +68,34 @@ for (const key in loggedInUser) {
   console.log(loggedInUser[key]);
   // this is how we access the values of a property inside an array.
 }
+
+// --------------------------------------------------------------------------------------------------------
+// while loop
+// In while the code get executed until the condition is "true"
+
+// while (true) {
+//   console.log("You are an idiot!");
+// }
+// We can create an infinite loop like this!
+
+let isFinished = false;
+
+while (!isFinished) {
+  // ! means the opposite. The opposite of isFinished = false in the 81st line is isFinished = true
+  // So because the isFinished is set to true at the beginning, the while loop starts to get executed.
+
+  isFinished = confirm("Do you want to quit");
+  // confirm is an alternative to "alert"
+  // This will ask the user to click "ok" or "cancel" instead of just "ok"
+
+  // "cancel" means isFinished = false; so the ! of isFinished = false; is isFinished = true;
+  // so when we select cancel, the condition sets to true and the code keeps looping
+
+  // "ok" means isFinished = true; so the ! of isFinished = true; is isFinished = false;
+  // so when we select ok, the condition sets to false and the code stops looping
+
+  // so the code keeps on looping until we select "ok" rather than "cancel"
+}
+
+console.log("Done!");
+// This console.log("Done!"); code line get executed "after" the above while code is finished executing.
