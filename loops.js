@@ -40,3 +40,31 @@ for (const userName of users) {
   //   This for of loop get executed again and again for every element inside the array
   console.log(userName);
 }
+// result
+// Indula
+// Yashodha
+// Janith
+// Geethma
+// Janeesha
+// Shameen
+
+// --------------------------------------------------------------------------------------------------------
+// for-in loop
+
+const loggedInUser = {
+  userName: "Indula",
+  age: 21,
+  isAdmin: true,
+};
+
+for (const key in loggedInUser) {
+  // this constant holds the different property names. (often referred as keys)
+  // we can use whatever we want as the name of the const instead of key.
+  console.log(key);
+  // result
+  // userName
+  // age
+  // isAdmin
+  console.log(loggedInUser[key]);
+  // this is how we access the values of a property inside an array.
+}
